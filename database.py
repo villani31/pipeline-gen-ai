@@ -15,8 +15,14 @@ DB_USER = os.getenv("DB_USER")
 DB_PASS = os.getenv("DB_PASS")
 
 def write_data_postgresql(data: Vendas):
-    """"
+    """
     Funcao para salvar no PostgreSQL.
+
+    Args:
+        host (string): Hostname do banco de dados
+        database (string): Nome da database
+        user (string): Usuario do banco de dados
+        password (string): Senha do banco de dados
     """
 
     try:

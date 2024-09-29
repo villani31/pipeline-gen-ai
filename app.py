@@ -6,7 +6,7 @@ from database import write_data_postgresql
 
 def main():
     """
-    Funcao main() para chamado do Streamlit.
+    Funcao main() para chamado do App Streamlit.
     """
 
     st.title("Sistema de Vendas....")
