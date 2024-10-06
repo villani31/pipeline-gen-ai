@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: dw_vendas_source
+    schema: public
+    tables:
+      - name: vendas
+        description: Tabela com as vendas de produtos
