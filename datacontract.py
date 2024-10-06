@@ -1,5 +1,5 @@
 from datetime import datetime
-from pydantic import BaseModel, EmailStr, PositiveFloat, PositiveInt
+from pydantic import BaseModel, EmailStr, PositiveFloat, PositiveInt, Field
 from enum import Enum
 
 class ProductEnum(str, Enum):
@@ -12,6 +12,7 @@ class Vendas(BaseModel):
     Modelo de dados para as vendas.
 
     Args:
+        nome (str, min 3, max 50) nome do vendedor
         email (EmailStr): email do vendedor
         data (datetime): data da venda
         valor (PositiveFloat): valor da venda
@@ -20,6 +21,7 @@ class Vendas(BaseModel):
         produto (ProdutoEnum): categoria do produto
     """
 
+    nome: str = Field(min_length=3, max_length=50, pattern=r"^[a-zA-Z\s]+$")
     email: EmailStr
     data: datetime
     valor: PositiveFloat

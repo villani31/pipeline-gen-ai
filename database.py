@@ -37,10 +37,11 @@ def write_data_postgresql(data: Vendas):
 
         # insert
         insert_query = sql.SQL(
-            "INSET INTO vendas (email, data, valor, quantidade, produto) VALUES (%s, %s, %s, %s, %s)"
+            "INSERT INTO vendas (nome, email, data, valor, quantidade, produto) VALUES (%s, %s, %s, %s, %s, %s)"
         )
 
         cursor.execute(insert_query, (
+            data.nome,
             data.email,
             data.data,
             data.valor,

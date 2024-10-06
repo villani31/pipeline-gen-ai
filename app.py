@@ -9,7 +9,8 @@ def main():
     Funcao main() para chamado do App Streamlit.
     """
 
-    st.title("Sistema de Vendas....")
+    st.title("Sistema - Vendas de produtos")
+    nome = st.text_input("Nome completo do vendedor:")
     email = st.text_input("Digite o email do vendedor:")
     data = st.date_input("Data da venda:", datetime.now())
     hora = st.time_input("Hora da venda:", value=time(9, 0))
@@ -25,6 +26,7 @@ def main():
             data_hora = datetime.combine(data, hora)
 
             venda = Vendas(
+                nome = nome,
                 email = email,
                 data = data_hora,
                 valor = valor,
