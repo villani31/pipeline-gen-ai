@@ -14,7 +14,7 @@ Uma biblioteca em Python que permite criar aplicações web interativas para ci�
 ### Pydantic
 Uma biblioteca que valida e define configurações de dados em Python, utilizando anotações de tipo para garantir que os dados estejam corretos e completos.
 
-#### Psycopg2
+### Psycopg2
 Um adaptador para PostgreSQL em Python, permitindo a interação com bancos de dados PostgreSQL através de consultas SQL e manipulação de dados.
 
 ### PostgreSQL
