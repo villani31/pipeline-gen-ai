@@ -26,7 +26,7 @@ Uma ferramenta para criar documentação estática, que utiliza Markdown e gera 
 ### Dbt
 Uma ferramenta de transformação de dados que permite modelar, testar e documentar dados em um ambiente de data warehouse, facilitando o fluxo de trabalho de análise.
 
------------------------------------------------------------------
+----
 ## Comandos úteis:
 
 #### Streanlit:
